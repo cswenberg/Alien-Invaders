@@ -1,8 +1,8 @@
 """
 Constants for Alien Invaders
 
-This module global constants for the game Alien Invaders. These constants need to be used 
-in the model, the view, and the controller. As these are spread across multiple modules, 
+This module global constants for the game Alien Invaders. These constants need to be used
+in the model, the view, and the controller. As these are spread across multiple modules,
 we separate the constants into their own module. This allows all modules to access them.
 
 Conner Swenberg, cls364 ; Jay Chand, jpc342
@@ -13,7 +13,7 @@ import sys
 
 ### WINDOW CONSTANTS (all coordinates are in pixels) ###
 
-#: the width of the game display 
+#: the width of the game display
 GAME_WIDTH  = 800
 #: the height of the game display
 GAME_HEIGHT = 700
@@ -77,11 +77,11 @@ BOLT_RATE   = 5
 ### GAME CONSTANTS ###
 
 # state before the game has started
-STATE_INACTIVE = 0 
+STATE_INACTIVE = 0
 # state when we are initializing a new wave
-STATE_NEWWAVE  = 1 
+STATE_NEWWAVE  = 1
 # state when the wave is activated and in play
-STATE_ACTIVE   = 2 
+STATE_ACTIVE   = 2
 # state when we are paused between lives
 STATE_PAUSED   = 3
 # state when we restoring a destroyed ship
@@ -93,12 +93,12 @@ STATE_COMPLETE = 5
 
 ### USE COMMAND LINE ARGUMENTS TO CHANGE NUMBER OF ALIENS IN A ROW"""
 """
-sys.argv is a list of the command line arguments when you run Python. These arguments are 
+sys.argv is a list of the command line arguments when you run Python. These arguments are
 everything after the word python. So if you start the game typing
 
     python invaders 3 4 0.5
-    
-Python puts ['breakout.py', '3', '4', '0.5'] into sys.argv. Below, we take advantage of 
+
+Python puts ['breakout.py', '3', '4', '0.5'] into sys.argv. Below, we take advantage of
 this fact to change the constants ALIEN_ROWS, ALIENS_IN_ROW, and ALIEN_SPEED.
 """
 try:
@@ -127,8 +127,8 @@ except:
 
 #: state after beginning game, but before initilizing a new wave
 STATE_INTRO = 6
-#: speed to write intro message in STATE_INTRO
-WRITE_SPEED = 5
+#: speed to write intro message in STATE_INTRO, higher number means slower speed
+WRITE_SPEED = 4
 #: number of waves to complete before beating the game
 ALIEN_WAVES = 3
 #: incrementing number for alien speed for each alien wave
